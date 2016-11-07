@@ -284,6 +284,7 @@
                                 var optionLabel = '<label for="' + optionId + '">' + answer.option + '</label>';
 
                                 var answerContent = $('<li></li>')
+                                    .attr('data-message', answer.message)
                                     .append(input)
                                     .append(optionLabel);
                                 answerHTML.append(answerContent);
